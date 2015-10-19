@@ -1,0 +1,10 @@
+_site
+.sass-cache
+bower_components/
+
+.ruby-gemset
+.ruby-version
+
+node_modules/
+.sass-cache/
+_images/

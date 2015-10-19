@@ -1,0 +1,36 @@
+# Site settings
+title: Kenner Kliemann
+email: kenner.hp@gmail.com
+description: "My thoughts about computer science"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://kennerkliemann.com.br" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+# markdown: redcarpet
+highlighter: pygments
+
+# Permalinks
+permalink: /posts/:title
+timezone: America/Sao_Paulo
+
+author:
+  name: 'Kenner Kliemann'
+
+twitter_username: kennerkliemann
+github_username:  gnomex
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bin
+
+gems:
+  - jekyll-redirect-from
+
+sass:
+  sass_dir: _sass
+  compressed: true
+
+google_analytics: UA-45805354-3
+disqus_shortname: kennerkliemann
