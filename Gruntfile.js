@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             flatten: true,
             cwd: 'node_modules/basscss/css/',
             src: 'basscss.min.css',
-            dest: '_sass/',
+            dest: 'css/',
             filter: 'isFile'
           }
         ]
