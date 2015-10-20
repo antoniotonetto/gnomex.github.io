@@ -19,11 +19,15 @@ author:
 
 twitter_username: kennerkliemann
 github_username:  gnomex
+linkedin_username: kennerkliemann
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - bin
+  - node_modules
+  - bower_components
+  - Gruntfile
 
 gems:
   - jekyll-redirect-from

@@ -7,9 +7,25 @@ module.exports = function(grunt) {
           {
             expand: true,
             flatten: true,
-            cwd: 'node_modules/basscss/css/',
-            src: 'basscss.min.css',
-            dest: 'css/',
+            cwd: 'bower_components/jquery/dist/',
+            src: 'jquery.min.js',
+            dest: 'js/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd: 'bower_components/font-awesome/scss/',
+            src: '**',
+            dest: '_sass/font-awesome/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd: 'bower_components/font-awesome/fonts/',
+            src: '**',
+            dest: 'css/fonts',
             filter: 'isFile'
           }
         ]
@@ -21,7 +37,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: '_images/',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'public/images/'
+          dest: 'img/'
         }]
       }
     }

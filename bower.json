@@ -1,0 +1,22 @@
+{
+  "name": "Kenner Alan Kliemann",
+  "version": "0.1.0",
+  "authors": [
+    "Kenner Alan Kliemann <kenner.hp@gmail.com>"
+  ],
+  "description": "My blog",
+  "license": "MIT",
+  "homepage": "http://kennerkliemann.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.4.0"
+  }
+}
