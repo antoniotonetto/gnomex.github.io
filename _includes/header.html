@@ -1,8 +1,8 @@
 <header>
-  <nav class="navbar bg-white">
-    <div class="container">
-      <a class="navbar-brand ruby-logo" href="index.html">
-        <i class="fa fa-diamond"></i>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <a class="navbar-brand ruby-logo" href="/">
+        <span class="fa fa-code fa-2x"><span>
       </a>
       <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
         ☰
@@ -17,13 +17,9 @@
             <a class="nav-link" href="/">Home</a>
           </li>
 
-          {% for page in site.pages %}
-            {% if page.title %}
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              <a class="nav-link" href="{{ '/about' | prepend: site.baseurl }}">About me</a>
             </li>
-            {% endif %}
-          {% endfor %}
 
           <li class="nav-item nav-item-toggable hidden-sm-up">
             <form class="navbar-form">

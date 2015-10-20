@@ -1417,7 +1417,7 @@ $twitter: #55acee;
 $google: #dc4e41;
 $github: #000;
 $linkedin: #0077b5;
-$ruby: #C71300;
+$ruby: #DF1803;
 
 .bg-facebook { background-color: $facebook; }
 .bg-twitter  { background-color: $twitter; }
@@ -1496,6 +1496,22 @@ $ruby: #C71300;
 }
 
 .ruby-logo {
+  padding: 0.5rem;
+  // background-color: #fff;
+  color: #fff;
+  border-radius: .25rem;
+  > span {
+    margin: 0;
+    &:before {
+      color: rgba(66,78,83,.8);
+      // color: rgba(255,146,0,.8);
+    }
+  }
+  &:focus {
+    > span:before {
+      color: #fff;
+    }
+  }
   &:hover,
   &:focus {
     background-color: $ruby;
