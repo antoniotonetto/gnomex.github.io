@@ -1,38 +1,32 @@
 <footer class="section-footer bg-white" role="contentinfo">
   <div class="container">
     <div class="row">
-  <hr />
+      <hr />
       <div class="col-md-6">
-        <div class="text-center">
-          <ul class="list-inline">
-            <!-- <li class="active"><a href="/about">About</a></li> -->
-            <li><a href="https://github.com/tatygrassini/landio-html" target="_blank">Landio at GitHub</a></li>
-          </ul>
-        </div>
+        <small class="text">{{ site.description }}</small>
       </div>
       <div class="col-md-6">
         <div class="text-center">
-        <a href="#" class="btn btn-social btn-icon btn-social-icon btn-social-github">
-          <span class="fa fa-github-square"></span>
-        </a>
-        <a href="https://twitter.com/{{ site.twitter_username }}" class="btn btn-social btn-social-icon btn-social-twitter">
-          <span class="fa fa-twitter"></span>
-        </a>
-        <a href="http://br.linkedin.com/in/{{ site.linkedin_username }}" class="btn btn-social btn-social-icon btn-social-linkedin">
-          <span class="fa fa-linkedin"></span>
-        </a>
+          <a href="#" class="btn btn-social btn-icon btn-social-icon btn-social-github">
+            <span class="fa fa-github-square"></span>
+          </a>
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="btn btn-social btn-social-icon btn-social-twitter">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a href="http://br.linkedin.com/in/{{ site.linkedin_username }}" class="btn btn-social btn-social-icon btn-social-linkedin">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="btn btn-social btn-social-icon btn-social-rss">
+            <span class="fa fa-rss"></span>
+          </a>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="">
-      <h2 class="text">{{ site.description }}</h2>
-    </div>
+<!--   <div class="row">
     <div class="text-center">
       <a class="scroll-top" href="#totop">Back to top <span class="icon-caret-up"></span></a>
     </div>
-  </div>
+  </div> -->
 </div>
 </footer>
 

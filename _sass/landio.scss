@@ -1418,6 +1418,7 @@ $google: #dc4e41;
 $github: #000;
 $linkedin: #0077b5;
 $ruby: #DF1803;
+$rss: #FF7A00;
 
 .bg-facebook { background-color: $facebook; }
 .bg-twitter  { background-color: $twitter; }
@@ -1492,6 +1493,13 @@ $ruby: #DF1803;
   &:hover,
   &:focus {
     background-color: $linkedin;
+  }
+}
+
+.btn-social-rss {
+  &:hover,
+  &:focus {
+    background-color: $rss;
   }
 }
 
