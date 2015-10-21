@@ -27,6 +27,22 @@ module.exports = function(grunt) {
             src: '**',
             dest: 'css/fonts',
             filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd: 'bower_components/bootstrap/dist/css/',
+            src: '*.min.css',
+            dest: 'css/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd: 'bower_components/bootstrap/dist/js/',
+            src: '*.min.js',
+            dest: 'js/',
+            filter: 'isFile'
           }
         ]
       }
