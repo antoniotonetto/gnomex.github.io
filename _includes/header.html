@@ -1,44 +1,14 @@
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <a class="navbar-brand ruby-logo" href="/">
-        <span class="fa fa-code fa-2x"><span>
-        </a>
-        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
-          ☰
-        </a>
-        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
-          <span class="icon-user"></span>
-        </a>
-        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
-          <ul class="nav navbar-nav pull-right">
-
-            <li class="nav-item nav-item-toggable active">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-
-            <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="{{ '/about' | prepend: site.baseurl }}">About me</a>
-            </li>
-
-            <li class="nav-item nav-item-toggable hidden-sm-up">
-              <form class="navbar-form">
-                <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter…">
-              </form>
-            </li>
-            <li class="navbar-divider hidden-sm-down"></li>
-            <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
-              <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="icon-search"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
-                <form class="navbar-form">
-                  <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter…">
-                </form>
-              </div>
-            </li>
-          </ul>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <hr class="small">
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+</header>

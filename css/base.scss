@@ -3,6 +3,9 @@
 ---
 @charset "utf-8";
 
+$fa-font-path: "/css/fonts";
+@import "font-awesome/font-awesome";
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "clean-blog",

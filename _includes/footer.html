@@ -1,27 +1,51 @@
-<footer class="section-footer bg-white" role="contentinfo">
+<!-- Footer -->
+<footer>
   <div class="container">
     <div class="row">
-      <hr />
-      <div class="col-md-6">
-        <small class="text">{{ site.description }}</small>
-      </div>
-      <div class="col-md-6">
-        <div class="text-center">
-          <a href="#" class="btn btn-social btn-icon btn-social-icon btn-social-github">
-            <span class="fa fa-github-square"></span>
-          </a>
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="btn btn-social btn-social-icon btn-social-twitter">
-            <span class="fa fa-twitter"></span>
-          </a>
-          <a href="http://br.linkedin.com/in/{{ site.linkedin_username }}" class="btn btn-social btn-social-icon btn-social-linkedin">
-            <span class="fa fa-linkedin"></span>
-          </a>
-          <a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="btn btn-social btn-social-icon btn-social-rss">
-            <span class="fa fa-rss"></span>
-          </a>
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          <li>
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <li>
+            <a href="http://br.linkedin.com/in/{{ site.linkedin_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <p class="copyright text-muted">By {{ site.title }} {{ site.time | date: '%Y' }}</p>
       </div>
     </div>
   </div>
-</div>
 </footer>
 

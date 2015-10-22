@@ -36,5 +36,7 @@ sass:
   sass_dir: _sass
   compressed: true
 
+paginate: 5
+
 google_analytics: UA-45805354-3
 disqus_shortname: kennerkliemann
