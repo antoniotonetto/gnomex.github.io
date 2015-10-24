@@ -10,9 +10,20 @@ layout: default
         <div class="post-heading">
           <h1>{{ page.title }}</h1>
           {% if page.subtitle %}
-          <h2 class="subheading">{{ page.subtitle }}</h2>
+            <h2 class="subheading">{{ page.subtitle }}</h2>
           {% endif %}
-          <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+
+          <span class="meta">
+            Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}
+          </span>
+          <span class="reading-time" title="Estimated read time">
+            {% assign words = content | number_of_words %}
+            {% if words < 360 %}
+              1 min read
+            {% else %}
+              {{ words | divided_by:180 }} mins read
+            {% endif %}
+          </span>
         </div>
       </div>
     </div>
@@ -29,5 +40,12 @@ layout: default
 
       </div>
     </div>
+
+    <div>
+      {% if site.disqus_shortname %}
+        {% include disqus.html %}
+      {% endif %}
+    </div>
   </div>
 </article>
+

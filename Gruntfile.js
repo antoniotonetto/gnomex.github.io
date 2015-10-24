@@ -48,14 +48,31 @@ module.exports = function(grunt) {
       }
     },
     imagemin: {                          // Task
-      dynamic: {                         // Another target
+      png: {                         // Another target
+        options: {
+          optimizationLevel: 5
+        },
         files: [{
           expand: true,
           cwd: '_images/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'img/'
+          src: ['**/*.png'],
+          dest: 'img/',
+          ext: '.png'
         }]
-      }
+      },
+      jpg: {                         // Another target
+        options: {
+          optimizationLevel: 5,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          cwd: '_images/',
+          src: ['**/*.{jpg,jpeg}'],
+          dest: 'img/',
+          ext: '.jpg'
+        }]
+      },
     }
   });
 

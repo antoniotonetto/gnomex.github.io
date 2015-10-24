@@ -20,6 +20,7 @@ author:
 twitter_username: kennerkliemann
 github_username:  gnomex
 linkedin_username: kennerkliemann
+disqus_shortname: kennerkliemann
 
 exclude:
   - Gemfile
@@ -30,7 +31,11 @@ exclude:
   - Gruntfile
 
 gems:
+  - jemoji
   - jekyll-redirect-from
+
+emoji:
+  src: "/assets/images/emoji"
 
 sass:
   sass_dir: _sass
